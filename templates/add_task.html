@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Create Task</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="logo">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+            </div>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/view_tasks">View Tasks</a>
+                <a href="/notifications">Notifications</a>
+                <a href="/logout">logout</a>
+            </nav>
+        </header>
+        <section id="create-task-section">
+            <h1>Create Task</h1>
+            <form action="{{ url_for('add_task') }}" method="post" enctype="multipart/form-data">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.title.label(class="form-control-label") }}
+                    {{ form.title(class="form-control", id="task", required="required") }}
+                    {% for error in form.title.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="form-group">
+                    {{ form.attachment.label(class="form-control-label") }}
+                    {{ form.attachment(class="form-control", id="attachment", type="file") }}
+                    {% for error in form.attachment.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="form-group">
+                    {{ form.submit(class="btn btn-primary") }}
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="logo">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+            </div>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/notifications">Notifications</a>
+                <a href="/login">Login</a>
+                <a href="/register">Register</a> <!-- Updated the href attribute -->
+            </nav>
+        </header>
+        <section id="welcome-section">
+            <h1>Welcome to Task Manager</h1>
+            <p>Your one-stop solution for managing tasks efficiently!</p>
+            <p>New User? Register</p>
+        </section>
+    </div>
+</body>
+</html>

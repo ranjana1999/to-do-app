@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="logo">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+            </div>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/notifications">Notifications</a>
+                <a href="/register">Register</a>
+            </nav>
+        </header>
+        <section id="login-section">
+            <h1>Login</h1>
+            <form action="/login" method="post">
+                {{ form.csrf_token }}
+                <label for="username">Username:</label>
+                <input type="text" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul class="flash-messages">
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+            <p>Don't have an account? <a href="/register">Register here</a>.</p>
+        </section>
+    </div>
+</body>
+</html>
