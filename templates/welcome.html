@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>View Tasks</title>
+    <title>Task Manager</title>
 </head>
-
 <body>
     <div class="container">
         <header>
@@ -17,31 +15,17 @@
             </div>
             <nav>
                 <a href="/welcome">Home</a>
+                <a href="/view_tasks">View Tasks</a>
                 <a href="{{ url_for('add_task') }}">Create Task</a>
                 <a href="/notifications">Notifications</a>
                 <a href="/logout">logout</a>
             </nav>
         </header>
-        <section id="view-tasks-section">
-            <h1>View Tasks</h1>
-            {% if tasks %}
-            <ul>
-                {% for task in tasks %}
-                    <li>
-                        <strong>{{ task.title }}</strong>
-                        <p>{{ task.description }}</p>
-                        
-                        {% if task.attachment %}
-                            <p>Attachment: <a href="{{ url_for('static', filename='uploads/' + task.attachment) }}" target="_blank">{{ task.attachment }}</a></p>
-                        {% endif %}
-                    </li>
-                {% endfor %}
-            </ul>
-            {% else %}
-                <p>No tasks found.</p>
-            {% endif %}
+        <section id="welcome-section">
+            <h1>Welcome to Task Manager</h1>
+            <p>Your one-stop solution for managing tasks efficiently!</p>
         </section>
+        
     </div>
 </body>
-
-</html>
+</html

@@ -13,7 +13,7 @@ from werkzeug.utils import secure_filename
 import random
 import os
 import string
-credential_path = "sqlitedemo\\mysqlsa.json"
+credential_path = "mysqlsa.json"
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
  
 def generate_secret_key(length=32):
@@ -147,10 +147,10 @@ def logout():
     logout_user()
     return redirect(url_for('index'))
  
-"""@app.route('/new_home')
+@app.route('/welcome')
 @login_required
-def new_home():
-    return render_template('new_home.html', current_user=current_user)"""
+def welcome():
+    return render_template('welcome.html', current_user=current_user)
 @app.route('/add_task', methods=['GET', 'POST'])
 @login_required
 def add_task():

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "fleet-purpose-411708",
+  "private_key_id": "24a97033aa8ae067eaa4dedafd7a4b92a8c5c321",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCprp5dHtQDQ8sf\nO8qoM8jzQmj7joQk7tP2DoAiNVsDUihSs2Q9On7QWq70r/kf3Ruym1fHi8LMnhSg\nc13CSqlSBqFD3mQefZ5WmDmeChWtaeAl5JW/JfqdvFXLQeLGSt9VtASS3FbwW90N\nzXqpzcUhcQAQkdDGqG5y9e5NoWNMPUKtYViTIokvMTMaLmeGkDYcww2pIKaXp4CX\nDVJRQECx+IvYxt1oGtScEwTwqKCI3GNJBRTMUpjsPDOhb3ioYFH3te8UofQ5gwO7\na1DPBcyW121jSjJN4jTbzJlIjY1CBI0pKTvfmtbC/JiNQQMEfFDdXcJxo1mcfZZH\njOKjuOsBAgMBAAECggEABhZu9ZHP0u8peC0lu+uhs8KH8DCAgq+z2JHUHIYUBhY6\nPp9TgxPYbWK3gK1Yj4FYB0wl9dGIk10/ibMh48DYesokmoH9zw88MUikVoxvkyln\ngoyFJ9a1u1eAr3plZ65TfWhoOpmfn9932pEq67End6ftc+q7VglAbyzuGAhoftlr\n1KIdiAPovt13XJkVsn1E8hcJyv/JzgiGL7OhGv1Tjq8cW17K6ZoHbgOfm5hULsBa\nUutrcc0OIF8buqsxloLOQ3B6hoikZIx2hfEpmJstphEkyJW1fwejOcXVi/WqbRkn\nljhQoQloz6tGTVEsURZ9PV9TVAX4wkX466bCmf35vQKBgQDaTrIdaAHjlWD24s1x\nCWh9NuaOhJALPIv4rQDncM1VaIysAHn9fIX9ZDoVVNwvGeGjhGVcwG7KqNoocdlx\nX2gakks5a57ne79Qo1SabYu2dlN2fdekrWXY+5f8K/e6ZHvqH/XfEPg/NDhrN4hu\nn0cfQuRRi6cmKaXNAoVa4gAPHQKBgQDG+qiSVqh4qKABMoMlTGiX80hFisruuLv3\nYYkFvj3ICU0OsR10YyLXfFN3FXMh+IsWFC/4XpU7EVrmtW7b2PkAy1PnR7X/yovP\nW7yArK6Qsn1I4kpzMqrgY/ETDJyIOlEB0/9A5WLxJ+vkwevmtMO0+uf8K42MyKQa\nNQgn8ZDSNQKBgQC0L9JJ/UfZ3bj77jWdwCMzfrYMGhR+gcoSRlGBthR1E2dQrNAD\nzt0VSb27T6Cxa85W1feH9/k6YuY2DcppDlNx4yAd09uDuxss5rL1B8gSoVXAbpwn\n+0seLoPDC1Nc0IWKuDiLlokgOez7agm9LNBaWC71s6wSDrwgG52QZwufbQKBgQCU\ngBf090XOnxKjMh6cZJUe6ktC0122ohpuetV3es7DDuX6lAbGiQJEzh3AnzqI3OR4\nuuI+O+Cl78Lmsfulih30EMtyrZtP5stHG1Dou3eguAU2suQba3IJ+6y8qcndBaDV\ne3Fh7pBUKJYt6Oh1Cu2QkT03fw2qR0fp4zBOF0QdDQKBgCbHInd26WfgHW1L51e3\nPExh4+zQsY5bsecfSabrIDWLN902dR8TjK5cut4FxEUrqhuMWzqIxaFrCWnlvchG\nJP2TyZAxqyA9+5FaXeDQezLa2T5GGCfzYd61jkccBOidx5AwBiY/KMQkpUQ1Gd9Y\nXRhCqLfE5bipujK+hSBVz4pE\n-----END PRIVATE KEY-----\n",
+  "client_email": "mysqlsa@fleet-purpose-411708.iam.gserviceaccount.com",
+  "client_id": "115560725422962027241",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mysqlsa%40fleet-purpose-411708.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
